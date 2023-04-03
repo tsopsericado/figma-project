@@ -66,7 +66,7 @@ li a {
 
 
 .staff-pic {
-  width: 80%;
+  width: 100%;
 }
 
 /* 
@@ -397,7 +397,7 @@ li a {
 .container5 {
   background-color: #252b42;
   width: 100%;
-  height: 80vh;
+  height: 500px;
   align-items: center;
 }
 
@@ -449,7 +449,7 @@ li a {
 .pic1 {
   /* width: 328px; */
   width: 260px;
-  height: 373px;
+  height: 300px;
   background: #FFFFFF;
 }
 
@@ -460,6 +460,7 @@ li a {
 .staff-member h2 {
   text-align: center;
   margin-top: 15px;
+  line-height: 1.5;
 }
 
 .staff-member p {
@@ -469,20 +470,20 @@ li a {
 
 .staff-member ul {
   display: flex;
-  text-align: center;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   color: blue;
   text-decoration: unset;
   list-style: none;
-  gap: 2px;
+  margin-top: 7px;
 }
 
 .container6 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.223)), url(../images/mates.png);
   background-repeat: no-repeat;
   height: fit-content;
-  /* padding: 15% 10%; */
   overflow: hidden;
+  padding: ;
 }
 
 .box {
@@ -503,9 +504,6 @@ li a {
   width: 51%;
   height: 50px;
   padding-bottom: 15px;
-  /* background: #F9F9F9; */
-
-
 }
 
 .sect-head p {
@@ -576,8 +574,6 @@ li a {
 
 }
 
-.submit1 {}
-
 .submit1 .btn {
   background-color: #FFA62B;
   color: #d9edff;
@@ -587,8 +583,10 @@ li a {
 
 .foothead {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  gap: 330px;
+  gap: 400px;
+  height: 20vh;
   background-color: #252B42;
 
 }
@@ -608,7 +606,7 @@ li a {
 }
 
 footer {
-  height: 60vh;
+  height: 70vh;
 }
 
 .footer-id {
@@ -617,10 +615,10 @@ footer {
   justify-content: center;
   padding-top: 70px;
   /* align-items: center; */
-  gap: 60px;
+  gap: 45px;
   color: #FFFFFF;
   background-color: #252B42;
-  height: 270px;
+  height: 200px;
 }
 
 .fetch {
@@ -637,6 +635,7 @@ footer {
 
 .foot1 h2 {
   line-height: 1.5em;
+  font-size: 20px;
 }
 
 
