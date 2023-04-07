@@ -2,14 +2,14 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 0;
   margin: 0;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .container1 {
   width: 100%;
   height: 823px;
   background-size: cover;
-  background-image: url(../images/cover.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cover.png);
   background-repeat: no-repeat;
   font-family: Montserrat;
   text-decoration: none;
@@ -33,7 +33,8 @@
 .right-nav {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  gap: 20px;
+  width: 350px;
 }
 
 .logo a {
@@ -63,67 +64,49 @@ li a {
   justify-content: flex-end;
 }
 
-
-
-.staff-pic {
-  width: 100%;
-}
-
-/* 
-.icon-bar {
-  padding-top: 40px;
-  padding-left: 15px;
-} */
-
-.first-header h1 {
-  width: 400px;
-  height: 120px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 60px;
-  letter-spacing: 0.2px;
-}
-
-.first-header p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 110;
-  font-size: 15px;
-  line-height: 1.5em;
-  letter-spacing: 0.2px;
-  color: #ffffff;
-  gap: 10px;
-}
-
-.first-header {
-
-}
-
-.first-page-content {
-  width: 70%;
-  margin: auto;
+.header-actions-appointment {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  gap: 10vw;
+  justify-content: space-between;
+  padding: 70px 100px 70px 70px;
 }
 
-.first-page {
-  /*   display: flex;
-  justify-content: center;
-  align-items: center; */
-  /*   height: 823px;
-  left: 0px;
-  right: 0px;
-  top: 0px; */
-  background: rgba(0, 0, 0, 0.4);
-  gap: 18vw;
-  height: 718px;
-  width: 100%;
-  border: 2px solid pink;
+.header-action {
+
+  height: 100%;
+}
+
+.header-action h2 {
+  font-size: 3.2rem;
+  color: #fff;
+  width: 90%;
+}
+
+.header-action p {
+  padding: 30px 0 30px;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  ;
+  font-weight: 600;
+  width: 60%;
+}
+
+.action-button {
+  display: flex;
+}
+
+.header-action .action-button button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: orange;
+}
+
+.header-action .action-button button:last-child {
+  background-color: transparent;
+  border: 1px solid orange;
 }
 
 .first-header .to-btn {
@@ -144,22 +127,43 @@ li a {
   border: 1px solid #fff;
 }
 
-.box1 {
- width: ;
+.header-appointment {
+  background-color: #fff;
+  width: 45%;
+  padding: 5% 7% 2% 7%;
+  border-radius: 10px;
+  margin-left: 30%;
 }
 
-.box1 h1 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 32px;
+.header-appointment h4 {
   text-align: center;
-  letter-spacing: 0.1px;
-  color: #252b42;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #fff;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.header-appointment .form-part label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-appointment .form-part input {
+  padding: 10px 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.03)
+}
+
+.header-appointment .form-part button {
+  padding: 15px 10px;
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
 }
 
 .content1 {
@@ -224,13 +228,13 @@ li a {
 }
 
 .card ul {
-  padding: 25px 40px;
   list-style: none;
-  line-height: 1.2em;
-}
-
-.card li {
-  line-height: 0.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0 0 10px;
+  font-size: 13px;
+  line-height: 13px;
 }
 
 .b2 {
@@ -242,17 +246,18 @@ li a {
   justify-content: center;
   gap: 10px;
   align-items: center;
+  border-radius: 10px;
 }
 
-.cardelmt{
+.cardelmt {
   margin-bottom: 20px;
 }
 
 
 .spanbtn {
   color: blue;
-  padding-left: 35px;
-  
+  padding-left: 10px;
+
 }
 
 .b2 img {
@@ -268,7 +273,7 @@ li a {
   align-items: center;
 }
 
-.content3{
+.content3 {
   padding-top: 50px;
 }
 
@@ -324,7 +329,7 @@ li a {
   align-items: center;
 }
 
-.content4{
+.content4 {
   padding-top: 80px;
 }
 
@@ -353,20 +358,16 @@ li a {
 
 .ratingboxes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 200;
   height: 40%;
-  border: 1px solid #DEDEDE;
   border-radius: 5px;
-  border: 2px solid blue;
 }
 
 .admin {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: start;
   gap: 20px;
@@ -374,11 +375,12 @@ li a {
   background: #fff;
   border-radius: 5px;
   padding: 20px;
+  width: 20vw;
 }
 
 .fa-icons {
   color: #F3CD03;
-  /* padding: 5px; */
+  padding: 5px;
   display: flex;
   justify-content: left;
 }
@@ -447,10 +449,9 @@ li a {
 }
 
 .pic1 {
-  /* width: 328px; */
-  width: 260px;
-  height: 300px;
+  width: 22.3vw;
   background: #FFFFFF;
+  border-radius: 2px;
 }
 
 .staff-member {
@@ -463,6 +464,10 @@ li a {
   line-height: 1.5;
 }
 
+.staff-pic {
+  width: 100%;
+}
+
 .staff-member p {
   text-align: center;
   margin-top: 5px;
@@ -471,7 +476,8 @@ li a {
 .staff-member ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
   color: blue;
   text-decoration: unset;
   list-style: none;
@@ -483,27 +489,32 @@ li a {
   background-repeat: no-repeat;
   height: fit-content;
   overflow: hidden;
-  padding: ;
+  height: 100vh;
 }
 
-.box {
-  padding: 15px 61px;
-  background: #F9F9F9;
+.ctn1 .box {
+  height: 40px;
+  width: 193px;
+  padding-left: 10px;
 }
 
-/* .box1 {
-  padding: 15px 60px;
-  background: #F9F9F9;
+.content6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 200px 250px 130px;
+}
 
-} */
 
 .psl-infos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 51%;
   height: 50px;
+  border: 3px solid red;
   padding-bottom: 15px;
+  max-width: 590px;
 }
 
 .sect-head p {
@@ -540,11 +551,11 @@ li a {
   align-items: center;
   padding: 15px 40px;
   border-radius: 5px;
-  /* gap: 10px; */
+  gap: 10px;
 }
 
 .white-intersection {
-  /* height: 15vh; */
+
   background: #FFFFFF;
 }
 
@@ -552,8 +563,9 @@ li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 100px;
   width: 100%;
-  height: 15vh;
+  height: 25vh;
 }
 
 .div-title {
@@ -612,10 +624,8 @@ footer {
 .footer-id {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 70px;
-  /* align-items: center; */
-  gap: 45px;
   color: #FFFFFF;
   background-color: #252B42;
   height: 200px;
@@ -663,23 +673,73 @@ footer {
 
 .fufooter {
   background-color: #16697A;
-  height: 100px;
+  height: 70px;
 }
 
 .fufooter p {
   padding: 17px 17px 0px 220px
 }
 
-@media screen and (max-width :700) {
-  body {
-    background-color: red;
+
+@media screen and (max-width :435px) {
+  * {
+    outline: 2px solid red;
   }
 
   .navbar {
     width: 96%;
+    border: 3px solid red;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+
+  .foothead {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .header-actions-appointment {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container1 {
+    height: 1111px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box2 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .container2 {
+    height: 192vh;
+  }
+
+  .container4 {
+    height: 250vh;
+
+  }
+
+  .ratingboxes {
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .admin {
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 20vw;
+  }
+
 }
