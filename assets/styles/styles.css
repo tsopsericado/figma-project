@@ -17,6 +17,10 @@
   list-style-type: none;
 }
 
+.main-nav {
+  width: 80%;
+}
+
 .navbar {
   width: 96%;
   height: 90px;
@@ -489,12 +493,6 @@ li a {
   height: 100vh;
 }
 
-.ctn1 .box {
-  height: 40px;
-  width: 193px;
-  padding-left: 10px;
-}
-
 .content6 {
   display: flex;
   flex-direction: column;
@@ -505,12 +503,16 @@ li a {
 
 .psl-infos {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: fit-content;
   height: 50px;
-  border: 3px solid red;
   padding-bottom: 15px;
-  max-width: 590px;
+  outline: 1px solid blueviolet;
+  /* max-width: 590px; */
+}
+
+.box {
+  width: 50%;
 }
 
 .sect-head p {
