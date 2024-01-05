@@ -2,7 +2,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 0;
   margin: 0;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .container1 {
@@ -71,13 +71,15 @@ li a {
 
 .header-actions-appointment {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 70px 100px 70px 70px;
+  gap: 19%;
+  padding: 100px 70px 100px 70px;
 }
 
 .header-action {
-  height: 100%;
+  height: 300px;
+  width: 450px;
 }
 
 .header-action h2 {
@@ -96,6 +98,7 @@ li a {
 
 .action-button {
   display: flex;
+  gap: 20px;
 }
 
 .header-action .action-button button {
@@ -132,10 +135,9 @@ li a {
 
 .header-appointment {
   background-color: #fff;
-  width: 45%;
-  padding: 5% 7% 2% 7%;
+  width: 350px;
+  padding: 3%;
   border-radius: 10px;
-  margin-left: 30%;
 }
 
 .header-appointment h4 {
@@ -150,17 +152,17 @@ li a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header-appointment .form-part input {
+.form-part input {
   padding: 10px 10px;
   margin: 10px 0;
-  width: 100%;
+  width: 94%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-.header-appointment .form-part button {
+.book-app-btn {
   padding: 15px 10px;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 100%;
   border: none;
   background-color: orange;
@@ -714,8 +716,7 @@ footer {
   .container2 {
     height: 192vh;
   }
-
-  .container4 {
+  .header-appointment .container4 {
     height: 250vh;
   }
 
